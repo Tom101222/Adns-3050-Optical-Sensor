@@ -1368,10 +1368,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <library name="ADNS3050">
 <packages>
 <package name="ADNS3">
-<pad name="MISO" x="6.35" y="0" drill="0.8"/>
-<pad name="LED_CNTRL" x="6.35" y="2.032" drill="0.8" rot="R180"/>
-<pad name="MOTION" x="6.35" y="4.064" drill="0.8" rot="R180"/>
-<pad name="NCS" x="6.35" y="6.096" drill="0.8" rot="R180"/>
+<pad name="MISO" x="6.367259375" y="0.621346875" drill="0.8"/>
+<pad name="LED_CNTRL" x="6.367259375" y="2.653346875" drill="0.8" rot="R180"/>
+<pad name="MOTION" x="6.367259375" y="4.685346875" drill="0.8" rot="R180"/>
+<pad name="NCS" x="6.362753125" y="6.695315625" drill="0.8" rot="R180"/>
 <pad name="MOSI" x="-6.35" y="-0.381" drill="0.8" rot="R180"/>
 <pad name="VDD" x="-6.35" y="1.651" drill="0.8"/>
 <pad name="GND" x="-6.35" y="3.683" drill="0.8"/>
@@ -1380,8 +1380,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="4.953" y1="13.081" x2="-4.826" y2="13.081" width="0.127" layer="20"/>
 <wire x1="-4.826" y1="13.081" x2="-4.826" y2="-14.986" width="0.127" layer="20"/>
 <wire x1="-4.826" y1="-14.986" x2="4.953" y2="-14.986" width="0.127" layer="20"/>
-<pad name="LED-" x="1.27" y="-24.13" drill="0.8"/>
-<pad name="LED+" x="-1.27" y="-24.13" drill="0.8"/>
+<pad name="LED-" x="1.27" y="-22.225" drill="0.8"/>
+<pad name="LED+" x="-1.27" y="-22.225" drill="0.8"/>
+<wire x1="6.359696875" y1="7.324821875" x2="6.35793125" y2="7.324821875" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -9252,7 +9253,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device=""/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="R/2012-12R"/>
-<part name="C3" library="eagle-ltspice" deviceset="C" device="C0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -9272,8 +9272,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="U1" gate="G$1" x="66.04" y="149.86"/>
 <instance part="SUPPLY7" gate="GND" x="66.04" y="139.7"/>
 <instance part="JP1" gate="A" x="104.14" y="99.06"/>
-<instance part="C2" gate="G$1" x="63.5" y="114.3"/>
-<instance part="C3" gate="G$1" x="71.12" y="114.3"/>
+<instance part="C2" gate="G$1" x="71.12" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -9290,11 +9289,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="76.2" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 <label x="81.28" y="121.92" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="76.2" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
-<junction x="63.5" y="116.84"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 <junction x="71.12" y="116.84"/>
-<wire x1="71.12" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
 <junction x="76.2" y="116.84"/>
 </segment>
 <segment>
@@ -9314,12 +9310,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="63.5" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<junction x="76.2" y="109.22"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<junction x="71.12" y="109.22"/>
 <wire x1="71.12" y1="109.22" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
-<junction x="63.5" y="109.22"/>
+<junction x="76.2" y="109.22"/>
+<junction x="71.12" y="109.22"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
