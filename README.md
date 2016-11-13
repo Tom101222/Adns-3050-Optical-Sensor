@@ -10,9 +10,13 @@ Setup
 
 Wiring
 The pins used in the program are defined at the top of the header file.
+
 MOSI -- MOSI, 
+
 MISO -- MISO, 
+
 SCLK -- SCLK, 
+
 NCS -- 3 
 
 
