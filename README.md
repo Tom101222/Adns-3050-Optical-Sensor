@@ -1,4 +1,4 @@
-ant# Adns-3050-Optical-Sensor
+# Adns-3050-Optical-Sensor
 Library and Eagle cad files for the Adns-3050 Sensor
 
 Overview
@@ -9,9 +9,9 @@ Setup
 
 Wiring
 The pins used in the program are defined at the top of the header file.
-MOSI -- MOSI
-MISO -- MISO
-SCLK -- SCLK
+MOSI -- MOSI, 
+MISO -- MISO, 
+SCLK -- SCLK, 
 NCS -- 3 
 
 
