@@ -1,3 +1,4 @@
+
 # Adns-3050-Optical-Sensor
 Library and Eagle cad files for the Adns-3050 Sensor
 
@@ -16,6 +17,7 @@ NCS -- 3
 
 
 Software
+
 A method has been provided to automate the setup of the sensor. It does not require as much setup as the adns-9800 laser based sensor. The default setup method (startup) uses all the default configuration options for the sensor but they can be changed easily. All configuration is done by writing to the correct registers on the sensor, a quick look over the datasheet should help anyone looking to change some settings, the write method can be used to write to the settings to the registers.  
 
 
