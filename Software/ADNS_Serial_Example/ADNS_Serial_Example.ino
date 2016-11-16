@@ -8,6 +8,6 @@ void setup(){
 }
 
 void loop() {
-getXY();//Get X and Y accerlation
+getXY();//Get X and Y accerlation and print
 delay(100);
 }

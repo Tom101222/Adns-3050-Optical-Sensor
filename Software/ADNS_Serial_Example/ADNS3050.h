@@ -56,7 +56,7 @@ void com_start(){
 
 byte Read(byte reg_addr){
   digitalWrite(PIN_NCS, LOW);//begin communication
-  // send address of the register, with MSBit = 0 to indicate it's a read
+  // send address of the register, with MSBit = 0 to say it's reading
   SPI.transfer(reg_addr & 0x7f );
   delayMicroseconds(100);
   // read data
@@ -71,7 +71,7 @@ byte Read(byte reg_addr){
 
 void Write(byte reg_addr, byte data){
   digitalWrite(PIN_NCS, LOW);
-  //send address of the register, with MSBit = 1 to show it's a write
+  //send address of the register, with MSBit = 1 to say it's writing
   SPI.transfer(reg_addr | 0x80 );
   //send data
   SPI.transfer(data);
