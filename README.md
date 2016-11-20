@@ -30,12 +30,12 @@ A method has been provided to automate the setup of the sensor. It does not requ
 
 Using to obtain postion
 
-Once the startup method has been run it is easy to obtain the position of the sensor, just use getx() and gety() consecutivley, it is important that there are no read operations between the two otherwise the data will be corrupted or changed.  
+Once the startup method has been run it is easy to obtain the position of the sensor, just use getx() and gety() consecutively, it is important that there are no read operations between the two otherwise the data will be corrupted or changed.  
 
 
 Sensor Operation
 
-The ADNS 3050 is essentially a small camera. It takes consecutive photos and the DSP mathematically determines the amount of movement between pictures. The data is then stored in the DELTA_X and DELTA_Y registers (0X03 and 0X04 respectivley) Once the the registers are read they are re-written with new data.
+The ADNS 3050 is essentially a small camera. It takes consecutive photos and the DSP mathematically determines the amount of movement between pictures. The data is then stored in the DELTA_X and DELTA_Y registers (0X03 and 0X04 respectively) Once the the registers are read they are re-written with new data.
 
 Setting the Resolution 
 
