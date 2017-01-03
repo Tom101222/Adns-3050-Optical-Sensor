@@ -2,6 +2,8 @@
 # Adns-3050-Optical-Sensor
 Library and Eagle cad files for the Adns-3050 Sensor
 
+Boards are now avaible for purchase on tindie! https://www.tindie.com/products/tom10122/adns-3050-optical-sensor-board/
+
 Overview
 
 The ADNS 3050 is an entry level gaming sensor with up to 2000cpi resolution. It uses 6 wires to communicate via SPI(including Power) and can be used to create your own computer mouse in addition to other uses in robotics. 
