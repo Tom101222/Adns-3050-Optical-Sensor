@@ -48,5 +48,13 @@ Write(0x0d,B11000);
 This sets bits 4-2 to 110 and bits 1 and 0 to 0 (needed for operation).  110 corresponds with the value found on page 29 of the datasheet for a resolution of 2000 
 
 
+Lift off detection 
+
+The sensor will stop tracking if the SQUAL is too low (usually when the sensor is too far off the ground). Sometimes when the sensor is placed back down it will not wake up. To mitigate/disable liftoff detection you can set the SQUAL_Threshold to 0 in the MISC_Settings register.The following code does just that:
+
+Write(0x25,B0000001);
+
+This should be run during setup.
+
 
 Any questions or comments feel free to email me at twigg1012@gmail.com
